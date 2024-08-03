@@ -12,7 +12,7 @@ exports.register = async (req, res) => {
       email,
     ]);
 
-    if (result.length !== 0) {
+    if (record.length !== 0) {
       return res
         .status(400)
         .json({ message: "User with this email already register." });
